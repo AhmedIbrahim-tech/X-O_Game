@@ -1,0 +1,55 @@
+// Varibales
+$WidthofGame: 500px;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(120deg, #000 0%, #434343 100%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  
+}
+header {
+  font-size: 2rem;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Game{
+  width: $WidthofGame;
+  text-align: center;
+  margin: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+
+
+  .title{
+    border: 1px solid #fff;
+    padding: 1% 2%;
+    margin-bottom: 10%;
+    // background-color: #6DD5FA;
+    span{
+      color: #2980B9;
+    }
+  }
+  .Square{
+      background-color:#6b6b83;
+      width: ($WidthofGame / 3) - 4;
+      height: ($WidthofGame / 3) - 4;
+      float: left;
+      margin: 2px;
+      font-size: ($WidthofGame / 5);
+
+      &:hover{
+        background-color:#3b8d99;
+        cursor: pointer;
+      }
+  }
+
+}
